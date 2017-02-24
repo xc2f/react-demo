@@ -3,10 +3,10 @@ var webpack = require("webpack");
 var path = require("path");
 
 module.exports = {
-	entry: './dev/main.jsx', // 入口文件
+	entry: './dev/entry.jsx', // 入口文件
 	output: {
-		path: path.resolve(__dirname, "dist"),
-		filename: 'bundle.js' // 打包输出的文件
+		path: path.resolve(__dirname, './dist/js/'),
+		filename: 'bundle.js', // 打包输出的文件
 	},
 	module: {
 		rules: [{
@@ -22,4 +22,5 @@ module.exports = {
 		// 现在你import文件的时候可以直接使用import Func from './file'，不用再使用import Func from './file.js'
 		extensions: ['.js', '.jsx', '.json', '.coffee']
 	}
+
 };
