@@ -12,12 +12,14 @@ var colors = ["#393E41", "#E94F37", "#1C89BF", "#A1D363", "#85FFC7", "#297373", 
 var renderData = [];
 for(var i = 0; i < colors.length; i++) {
 	var color = colors[i];
-	renderData.push(<Circle key={i + color} bgColor={colors[i]}/>); 
+	renderData.push(<Circle key={i + color} bgColor={colors[i]}/>);
 }
 
 
 import TodoList from './components/to_do_list';
 
+
+import Comment from './components/comment';
 
 ReactDOM.render(
 	<div className='here'>
@@ -27,7 +29,8 @@ ReactDOM.render(
 //		{renderData}
 //		<Count />
 	}
-	<TodoList />
+	{/*<TodoList />*/}
+  <Comment />
 
 	</div>,
 	document.getElementById('root')

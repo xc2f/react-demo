@@ -1,9 +1,9 @@
 // webpack.config.js
-var webpack = require("webpack");
 var path = require("path");
 
 module.exports = {
-	entry: './dev/entry.jsx', // 入口文件
+  	devtool: 'source-map',
+	entry: './src/entry.jsx', // 入口文件
 	output: {
 		path: path.resolve(__dirname, './dist/js/'),
 		filename: 'bundle.js', // 打包输出的文件
